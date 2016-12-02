@@ -8,7 +8,7 @@ Think of it as a low-level version of ng-animate or ReactCSSTransitionGroup in j
 npm i jqt -S
 ```
 
-Or if you prefer the [distribution file]() or [cdn](), why not? This library requires [jQuery](jquery) `>=1.8`.
+Or if you prefer the [distribution file](https://raw.githubusercontent.com/srph/jqt/master/index.js) or [cdn](https://cdn.rawgit.com/srph/jqt/master/index.js), why not? This library requires [jQuery](jquery) `>=1.8`.
 
 ## Usage
 `jqt` is pretty simple.
