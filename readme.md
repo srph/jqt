@@ -19,7 +19,7 @@ jqt.hide();
 ```
 
 ## API
-### $(selector).jqt(opts)
+### jqt = $(selector).jqt(opts)
 Returns an object with two functions, `enter` and `leave`. The options are as follows:
 
 | key | description | type | default |
@@ -30,4 +30,14 @@ Returns an object with two functions, `enter` and `leave`. The options are as fo
 |enterActive|Classname to append to the node after entering|`str`|`'enter-active'`|
 |leave|Classname to append to the node before leaving|`int`|`'leave'`|
 |leaveActive|Classname to append to the node after leaving|`int`|`'leave-active'`|
-|display|The `display` style rule to apply to the element after entering|`str`|`'block'`|
+|display|The `display` style rule to apply to the element before entering|`str`|`'block'`|
+
+### jqt.enter()
+Shows the element.
+
+In detail: First, it sets the node's `display` rule to block (default of `display`). Consequently, it applies the set `opts.enter` class, and then lastly applies the `opts.enterActive` class after the next tick.
+
+### jqt.leave()
+Hides the element.
+
+In detail: First, it applies the `opts.leave` class, and then applies the `opts.leaveActive` class after the next tick. Lastly, it sets the element's `display` rule to `none` after the set transition speed (`opts.speed`).
