@@ -28,8 +28,8 @@ Returns an object with two functions, `enter` and `leave`. The options are as fo
 |delay|Amount of ms to wait before running the `enter` or `exit` process. Useful when you're waiting for another transition to finish|`int`|0|
 |enter|Classname to append to the node before entering|`str`|`'enter'`|
 |enterActive|Classname to append to the node after entering|`str`|`'enter-active'`|
-|leave|Classname to append to the node before leaving|`int`|`'leave'`|
-|leaveActive|Classname to append to the node after leaving|`int`|`'leave-active'`|
+|leave|Classname to append to the node before leaving|`str`|`'leave'`|
+|leaveActive|Classname to append to the node after leaving|`str`|`'leave-active'`|
 |display|The `display` style rule to apply to the element before entering|`str`|`'block'`|
 
 ### jqt.enter()
