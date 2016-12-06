@@ -46,3 +46,12 @@ In detail: First, it sets the node's `display` rule to block (default of `displa
 Hides the element.
 
 In detail: First, it applies the `opts.leave` class, and then applies the `opts.leaveActive` class after the next tick. Lastly, it sets the element's `display` rule to `none` after the set transition speed (`opts.speed`)
+
+## Examples
+Checkout the demo [examples](https://srph.github.io/jqt) or its respective [source code](docs).
+
+To run the examples locally, first clone the repo, and then run the following:
+```
+npm i
+npm start
+```
