@@ -5,7 +5,7 @@ Think of it as a low-level version of ng-animate or ReactCSSTransitionGroup in j
 
 ## Installation
 ```bash
-npm i jqt -S
+npm i @srph/jqt -S
 ```
 
 Or if you prefer the [distribution file]() or [cdn](), why not? This library requires [jQuery](jquery) `>=1.8`.
