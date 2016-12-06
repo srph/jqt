@@ -4,7 +4,7 @@
   "description": "A *low-level* node hiding / showing through css transitions.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "browserify docs/script.js -o docs/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,9 @@
   },
   "homepage": "https://github.com/srph/jqt#readme",
   "dependencies": {
-    "jquery": "^1.8.3"
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.1"
   }
 }
