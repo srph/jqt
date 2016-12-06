@@ -1,7 +1,7 @@
 {
   "name": "@srph/jqt",
   "version": "0.1.0",
-  "description": "A *low-level* node hiding / showing through css transitions.",
+  "description": "A low-level jQuery plugin for node hiding / showing through css transitions.",
   "main": "index.js",
   "scripts": {
     "start": "browserify docs/script.js -o docs/bundle.js"
