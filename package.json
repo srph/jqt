@@ -1,6 +1,6 @@
 {
   "name": "@srph/jqt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A low-level jQuery plugin for node hiding / showing through css transitions.",
   "main": "lib/jqt.js",
   "scripts": {
