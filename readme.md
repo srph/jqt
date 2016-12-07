@@ -63,4 +63,5 @@ To run the examples locally, first clone the repo, and then run the following:
 ```
 npm i
 npm start
+open docs/index.html
 ```
