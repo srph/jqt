@@ -2,9 +2,10 @@
   "name": "@srph/jqt",
   "version": "0.1.0",
   "description": "A low-level jQuery plugin for node hiding / showing through css transitions.",
-  "main": "index.js",
+  "main": "lib/jqt.js",
   "scripts": {
-    "start": "browserify docs/script.js -o docs/bundle.js"
+    "start": "browserify docs/script.js -o docs/bundle.js",
+    "minify": "uglifyjs --compress --mangle -o lib/jqt.min.js -- lib/jqt.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "jquery": "^3.1.1"
   },
   "devDependencies": {
-    "browserify": "^13.1.1"
+    "browserify": "^13.1.1",
+    "uglify-js": "^2.7.5"
   }
 }

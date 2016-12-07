@@ -50,13 +50,15 @@ require('../');
 })();
 },{"../":2,"jquery":3}],2:[function(require,module,exports){
 (function (factory) {
+  // Based on the standard UMD jQuery template
+  // https://github.com/umdjs/umd/blob/master/templates/jqueryPlugin.js
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
     define(['jquery'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // Node/CommonJS
     var jQuery = require('jquery');
-    module.exports = factory(jQuery)
+    module.exports = factory(jQuery);
   } else {
     // Browser globals
     factory(jQuery);
