@@ -63,16 +63,16 @@ require('../');
     return {
       enter: function() {
         setTimeout(function() {
-          el.addClass(opts.enter);
-          el.css('display', opts.display);
+          el.addClass(opts.enter)
+            .css('display', opts.display);
 
           setTimeout(function() {
             el.addClass(opts.enterActive);
           }, 50);
 
           setTimeout(function() {
-            el.removeClass(opts.enter);
-            el.removeClass(opts.enterActive);
+            el.removeClass(opts.enter)
+              .removeClass(opts.enterActive);
           }, opts.speed);
         }, opts.delay);
       },
@@ -86,9 +86,10 @@ require('../');
           }, 50);
 
           setTimeout(function() {
-            el.removeClass(opts.leave);
-            el.removeClass(opts.leaveActive);
-            el.css('display', 'none');
+            el.css('display', 'none')
+              .removeClass(opts.leave)
+              .removeClass(opts.leaveActive);
+              
           }, opts.speed);
         }, opts.delay);
       }

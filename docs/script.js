@@ -29,18 +29,22 @@ require('../');
     var $this = $(this);
     var index = $this.data('index');
 
-    console.log(active, index);
-
+    // So we don't cause a weird transitioning of the same element
     if ( active === index ) {
       return;
     }
 
+    // Remove 'active' class from the currently active tab button
+    // Transition out the currently active tab body
     $(links[active]).removeClass('active');
     $(tabs[active]).jqt().exit();
 
+    // Add the 'active' class to the next active tab button (clicked button)
+    // Transition in the next active tab body
     $this.addClass('active');
     $(tabs[index]).jqt({ delay: 200, display: 'flex' }).enter();
 
+    // Update active tab
     active = index;
   });
 })(window.jQuery);
