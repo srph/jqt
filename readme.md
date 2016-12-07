@@ -15,7 +15,7 @@ I have no use case for list transitions yet. It would require elements to be rem
 npm i @srph/jqt -S
 ```
 
-Or if you prefer the [distribution file](https://raw.githubusercontent.com/srph/jqt/master/index.js) or [cdn](https://cdn.rawgit.com/srph/jqt/master/index.js), why not? This library requires [jQuery](jquery) `>=1.8`.
+Or if you prefer the [distribution file](https://raw.githubusercontent.com/srph/jqt/master/index.js) or [cdn](https://cdn.rawgit.com/srph/jqt/master/index.js), why not? This library requires [jQuery](jquery) `>=3`.
 
 ## Usage
 ```js
