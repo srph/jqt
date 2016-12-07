@@ -24,7 +24,7 @@ html, body {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  background: #3c8aea;
+  background: #5b8eff;
   border: 1px solid transparent;
   border-radius: 50px; 
   cursor: pointer;
@@ -148,7 +148,7 @@ html, body {
 .tabs a:hover,
 .tabs a.active {
   color: #fff;
-  background: #3c8aea;  
+  background: #5b8eff;  
 }
 
 .content {
