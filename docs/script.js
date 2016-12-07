@@ -1,9 +1,8 @@
-var jQuery = require('jquery');
-window.jQuery = jQuery;
+var $ = require('jquery');
 require('../');
 
 // Section A
-;(function($) {
+;(function() {
   var enter = $('.js-section-1-enter');
   var exit = $('.js-section-1-exit');
   var jqt = $('.js-section-1-menu').jqt({ speed: 200 });
@@ -15,10 +14,10 @@ require('../');
   exit.on('click', function() {
     jqt.exit();
   });
-})(window.jQuery);
+})();
 
 // Section B
-;(function($) {
+;(function() {
   var links = $('.js-section-2-tabs a');
   var tabs = $('.js-section-2-content');
   var active = 0;
@@ -47,4 +46,4 @@ require('../');
     // Update active tab
     active = index;
   });
-})(window.jQuery);
+})();

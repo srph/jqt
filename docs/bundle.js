@@ -1,10 +1,9 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-var jQuery = require('jquery');
-window.jQuery = jQuery;
+var $ = require('jquery');
 require('../');
 
 // Section A
-;(function($) {
+;(function() {
   var enter = $('.js-section-1-enter');
   var exit = $('.js-section-1-exit');
   var jqt = $('.js-section-1-menu').jqt({ speed: 200 });
@@ -16,10 +15,10 @@ require('../');
   exit.on('click', function() {
     jqt.exit();
   });
-})(window.jQuery);
+})();
 
 // Section B
-;(function($) {
+;(function() {
   var links = $('.js-section-2-tabs a');
   var tabs = $('.js-section-2-content');
   var active = 0;
@@ -30,23 +29,39 @@ require('../');
     var $this = $(this);
     var index = $this.data('index');
 
-    console.log(active, index);
-
+    // So we don't cause a weird transitioning of the same element
     if ( active === index ) {
       return;
     }
 
+    // Remove 'active' class from the currently active tab button
+    // Transition out the currently active tab body
     $(links[active]).removeClass('active');
     $(tabs[active]).jqt().exit();
 
+    // Add the 'active' class to the next active tab button (clicked button)
+    // Transition in the next active tab body
     $this.addClass('active');
     $(tabs[index]).jqt({ delay: 200, display: 'flex' }).enter();
 
+    // Update active tab
     active = index;
   });
-})(window.jQuery);
+})();
 },{"../":2,"jquery":3}],2:[function(require,module,exports){
-;(function($, undefined) {
+(function (factory) {
+  if (typeof define === 'function' && define.amd) {
+    // AMD. Register as an anonymous module.
+    define(['jquery'], factory);
+  } else if (typeof module === 'object' && module.exports) {
+    // Node/CommonJS
+    var jQuery = require('jquery');
+    module.exports = factory(jQuery)
+  } else {
+    // Browser globals
+    factory(jQuery);
+  }
+}(function($) {
   $.fn.jqt = function jqt(opts) {
     opts = $.extend({
       display: 'block',
@@ -89,14 +104,13 @@ require('../');
             el.css('display', 'none')
               .removeClass(opts.leave)
               .removeClass(opts.leaveActive);
-              
           }, opts.speed);
         }, opts.delay);
       }
     }
   }
-})(jQuery);
-},{}],3:[function(require,module,exports){
+}));
+},{"jquery":3}],3:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.1.1
  * https://jquery.com/
