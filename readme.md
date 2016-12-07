@@ -12,7 +12,7 @@ I have no use case for list transitions yet. It would require elements to be rem
 
 ## Installation
 ### npm
-> **Note**: If you have no idea what npm is, skip this part, and check out the [releases and cdn](#dist-cdn)
+> **Note**: If you have no idea what npm is, skip this part, and check out the [releases and cdn](#dist--cdn)
 
 ```bash
 npm i @srph/jqt -S
