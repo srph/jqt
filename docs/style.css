@@ -45,6 +45,10 @@ html, body {
   border-bottom: 1px solid #ddd;
 }
 
+.section:nth-child(odd) {
+  background: #FAFDFF;
+}
+
 .section.is-large {
   height: 100vh;
   display: flex;
