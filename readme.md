@@ -19,18 +19,10 @@ Just include [`jqt.js`](https://raw.githubusercontent.com/srph/jqt/master/lib/jq
 ```
 
 ### npm
+Just `require('@srph/jqt')` before running any jqt-related code.
 ```bash
 npm i @srph/jqt -S
 ```
-<details>
-	<summary>To use in your scripts, simply bootstrap.</summary>
-```js
-// Load `jqt`
-require('@srph/jqt');
-
-// All jqt-related or jQuery-related code
-```
-</details>
 
 ## Usage
 ```js
