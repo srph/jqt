@@ -11,31 +11,23 @@ This library was **only** *dogfed* for tab transitions, menu animations, etc.
 I have no use case for list transitions yet. It would require elements to be removed and appended properly. If you'd like this to be implemented, please submit an issue or preferrably a PR! If you'd like some help, let me know. I have an idea on how to implement this, but don't have the time to do so.
 
 ## Installation
-### npm
-> **Note**: If you have no idea what npm is, skip this part, and check out the [releases and cdn](#dist--cdn)
-
-```bash
-npm i @srph/jqt -S
-```
-
-To use in your scripts, simply bootstrap.
-
-```js
-require('@srph/jqt');
-
-// All jqt-related or jQuery-related code
-```
-
-### Dist / CDN
-> **Note**: This library requires [jQuery](jquery) `>=3`.
-
-Download the [distribution file](https://raw.githubusercontent.com/srph/jqt/master/lib/jqt.js) or [minified file](https://raw.githubusercontent.com/srph/jqt/master/lib/jqt.min.js). **Or** if you prefer, you can also use a cdn: [distribution file](https://cdn.rawgit.com/srph/jqt/master/lib/jqt.js) or [minified file](https://cdn.rawgit.com/srph/jqt/master/lib/jqt.min.js).
-
-Afterwards, load the script after jQuery.
+Just include [`jqt.js`](https://raw.githubusercontent.com/srph/jqt/master/lib/jqt.js) after [jQuery](jquery) `>=3`.
 
 ```html
 <script src="/path/to/jquery.js"></script>
 <script src="/path/to/jqt.js"></script>
+```
+
+### npm
+```bash
+npm i @srph/jqt -S
+```
+To use in your scripts, simply bootstrap.
+```js
+// Load `jqt`
+require('@srph/jqt');
+
+// All jqt-related or jQuery-related code
 ```
 
 ## Usage
