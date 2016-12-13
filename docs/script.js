@@ -47,3 +47,20 @@ require('../');
     active = index;
   });
 })();
+
+// Docs-related code
+// Animate scroll instead of an instant scroll
+// for element anchor elements (e.g., <a href="#section1"></a>)
+;(function() {
+  var $html = $('html, body');
+
+  $('a').on('click', function(evt) {
+    var a = $(this);
+
+    if ( a.attr('href').charAt(0) === '#' ) {
+      evt.preventDefault();
+      var top = $(a.attr('href')).offset().top;
+      $html.animate({ scrollTop: top });
+    }
+  });
+})();

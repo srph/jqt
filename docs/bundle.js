@@ -48,6 +48,21 @@ require('../');
     active = index;
   });
 })();
+
+// Docs-related
+;(function() {
+  var $html = $('html, body');
+
+  $('a').on('click', function(evt) {
+    var a = $(this);
+
+    if ( a.attr('href').charAt(0) === '#' ) {
+      evt.preventDefault();
+      var top = $(a.attr('href')).offset().top;
+      $html.animate({ scrollTop: top });
+    }
+  });
+})();
 },{"../":2,"jquery":3}],2:[function(require,module,exports){
 (function (factory) {
   // Based on the standard UMD jQuery template
