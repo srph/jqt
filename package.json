@@ -5,7 +5,8 @@
   "main": "lib/jqt.js",
   "scripts": {
     "start": "browserify docs/script.js -o docs/bundle.js",
-    "minify": "uglifyjs --compress --mangle -o lib/jqt.min.js -- lib/jqt.js"
+    "minify": "uglifyjs --compress --mangle -o lib/jqt.min.js -- lib/jqt.js",
+    "prepublish": "npm run minify"
   },
   "repository": {
     "type": "git",
