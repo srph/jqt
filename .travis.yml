@@ -1,0 +1,20 @@
+# Automatic GitBook deployment with rstacruz/git-updates-ghpages
+# https://github.com/rstacruz/git-update-ghpages
+language: node_js
+
+node_js:
+  - '6'
+
+env:
+  global:
+    - GIT_NAME: Travis CI
+    - GIT_EMAIL: nobody@nobody.org
+    - GITHUB_REPO: srph/jqt
+    # GitBook output
+    - GIT_SOURCE: _book
+
+script:
+  - npm run docs:build
+
+after_success:
+  if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then npm install git-update-ghpages && ./node_modules/.bin/git-update-ghpages -e; fi
