@@ -1,0 +1,4 @@
+node_js: 6
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then npm install && npm run docs:publish; fi
