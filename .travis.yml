@@ -1,5 +1,6 @@
 # Automatic GitBook deployment with rstacruz/git-updates-ghpages
 # https://github.com/rstacruz/git-update-ghpages
+language: node_js
 
 node_js:
   - '6'
