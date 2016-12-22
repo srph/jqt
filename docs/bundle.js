@@ -6,7 +6,7 @@ require('../');
 ;(function() {
   var enter = $('.js-section-1-enter');
   var exit = $('.js-section-1-exit');
-  var jqt = $('.js-section-1-menu').jqt({ speed: 200 });
+  var jqt = $('.js-section-1-menu').jqt();
 
   enter.on('click', function() {
     jqt.enter();
@@ -49,7 +49,9 @@ require('../');
   });
 })();
 
-// Docs-related
+// Docs-related code
+// Animate scroll instead of an instant scroll
+// for element anchor elements (e.g., <a href="#section1"></a>)
 ;(function() {
   var $html = $('html, body');
 
@@ -64,7 +66,7 @@ require('../');
   });
 })();
 },{"../":2,"jquery":3}],2:[function(require,module,exports){
-(function (factory) {
+(function (root, factory) {
   // Based on the standard UMD jQuery template
   // https://github.com/umdjs/umd/blob/master/templates/jqueryPlugin.js
   if (typeof define === 'function' && define.amd) {
@@ -75,10 +77,9 @@ require('../');
     var jQuery = require('jquery');
     module.exports = factory(jQuery);
   } else {
-    // Browser globals
-    factory(jQuery);
+    factory(root.jQuery);
   }
-}(function($) {
+}(this, function($) {
   $.fn.jqt = function jqt(opts) {
     opts = $.extend({
       display: 'block',
@@ -127,6 +128,7 @@ require('../');
     }
   }
 }));
+
 },{"jquery":3}],3:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.1.1

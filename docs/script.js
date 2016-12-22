@@ -5,7 +5,7 @@ require('../');
 ;(function() {
   var enter = $('.js-section-1-enter');
   var exit = $('.js-section-1-exit');
-  var jqt = $('.js-section-1-menu').jqt({ speed: 200 });
+  var jqt = $('.js-section-1-menu').jqt();
 
   enter.on('click', function() {
     jqt.enter();
