@@ -1,7 +1,8 @@
 # Automatic GitBook deployment with rstacruz/git-updates-ghpages
 # https://github.com/rstacruz/git-update-ghpages
 
-node_js: 6
+node_js:
+  - '6'
 
 env:
   global:
