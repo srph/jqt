@@ -48,6 +48,21 @@ require('../');
   });
 })();
 
+// Section C
+;(function() {
+  var enter = $('.js-section-3-enter');
+  var exit = $('.js-section-3-exit');
+  var jqt = $('.js-section-3-sidebar').jqt({ speed: 400 });
+
+  enter.on('click', function() {
+    jqt.enter();
+  });
+
+  exit.on('click', function() {
+    jqt.exit();
+  });
+})();
+
 // Docs-related code
 // Animate scroll instead of an instant scroll
 // for element anchor elements (e.g., <a href="#section1"></a>)
