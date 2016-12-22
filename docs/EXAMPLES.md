@@ -10,8 +10,10 @@ npm start
 open examples/index.html
 ```
 
+Otherwise, you can view them [online](http://jqt.netlify.com/) (all thanks to [Netlify](www.netlify.com)).
+
 ## CodePen
-Otherwise, all examples are also available via CodePen:
+All examples are also available via CodePen:
 
 - [Modal](http://codepen.io/srph/pen/bBmYjP)
 - [Tabs](http://codepen.io/srph/pen/ObBOrG)
