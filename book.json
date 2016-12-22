@@ -1,0 +1,5 @@
+{
+  "gitbook": ">=3.2.1",
+  "title": "jqt",
+  "plugins": ["prism", "-highlight"]
+}

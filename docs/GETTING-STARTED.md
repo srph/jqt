@@ -1,44 +1,21 @@
 ## Getting Started
-This library is very easy to drop-in and get its engines running. In this guide, we'll make a button that fades in and fades out.
+It's very easy to get the engines running. In this guide, we'll make a button that fades in and fades out.
 
-The concept may be familiar those who have background with ReactCSSTransitionGroup or ng-animate. If you haven't heard of them, welcome aboard!
+The concept may be familiar those who have background with ReactCSSTransitionGroup or ng-animate. Anyway, welcome aboard!
 
 Here's the [CodePen](http://codepen.io/srph/pen/jVRLxd) to preview the end-result of this guide.
 
-<details>
-<summary>Setup jqt</summary>
-Just include [`jqt.js`](https://raw.githubusercontent.com/srph/jqt/master/lib/jqt.js) after jQuery `>=3`.
-
-```html
-<script src="/path/to/jquery.js"></script>
-<script src="/path/to/jqt.js"></script>
-```
-
-### npm
-Just `require('@srph/jqt')` before running any jqt-related code.
-```bash
-npm i @srph/jqt -S
-```
-</details>
-
-<details>
-<summary>Setup the HTML</summary>
+## Setup the HTML
 First, we'll setup our html.
 
 ```html
-<button>
-  Toggle Box
-</button>
-
+<button>Toggle Box</button> 
 <div class="box" style="display: none;"></div>
 ```
 
 > **Note**: It's important that we set elements with an inline-style set to `display: none;` if we want it to initially appear as hidden.
 
-</details>
-
-<details>
-<summary>Setup the CSS</summary>
+## Setup the CSS
 This part is the most interesting part. This is where you'll put the instructions how the element will go in or out.
 
 ```sass
@@ -79,12 +56,8 @@ This part is the most interesting part. This is where you'll put the instruction
   transition: 0.5s opacity ease-in;
 }
 ```
-</details>
 
-<details>
-<summary>Setup the script</summary>
-We're finally in the last stage of this guide. I know it's been pretty long, but it's going to be all over shortly.
-
+## Setup the script
 This used to be either hard or tedious but, luckily, `jqt` lets us easily show or hide our element without much code.
 
 ```js
@@ -95,22 +68,13 @@ var active = false;
 
 $('button').on('click', function() {
   if ( active ) {
-  	$('box').jqt({ speed: 500 }).exit();
+  	$('.box').jqt({ speed: 500 }).exit();
   } else {
-  	$('box').jqt({ speed: 500 }).enter();
+  	$('.box').jqt({ speed: 500 }).enter();
   }
 
   active = !active;
 });
 ```
-</details>
 
-<details>
-<summary>Footer Notes</summary>
-- Checkout the [examples](https://srph.github.io/jqt).
-- Checkout the [API](https://github.com/srph/jqt#api) to check all the options accept by `.jqt(opts)`. This lets you configure the library's behaviors to suit your needs.
-</details>
-
-=====
-
-[← Back to the documentation](https://github.com/srph/jqt)
+And with that, hopefully, you grasp the concepts of jqt. With a little spice of creativity, this library can be a powerful weapon in your arsenal.
