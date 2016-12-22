@@ -6,7 +6,7 @@ Think of it as a low-level version of builtin jQuery animations such as [`$.fade
 Checkout the demo [examples](https://srph.github.io/jqt). If you prefer, you can also check out the [guide](guide.md) to get started!
 
 ## Use case
-I've never found any similar libraries outside frameworks. This library was *dogfed* for projects I handle at works, usually for tab transitions, menu animations, etc.
+I've never found any similar libraries outside frameworks. This library was massively *dogfed* for projects I handle at work, usually for tab transitions, menu animations, etc.
 
 ## Installation
 Just include [`jqt.js`](https://raw.githubusercontent.com/srph/jqt/master/lib/jqt.js) after [jQuery](jquery) `>=3`.
