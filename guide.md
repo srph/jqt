@@ -37,7 +37,7 @@ First, we'll setup our html.
 <summary>Setup the CSS</summary>
 This part is the most interesting part. This is where you'll put the instructions how the element will go in or out.
 
-```css
+```sass
 // This is only the styling rules for the
 // element we'll animate in and out
 .box {
