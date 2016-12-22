@@ -10,6 +10,7 @@ Here's the [CodePen](http://codepen.io/srph/pen/jVRLxd) to preview the end-resul
 	This guide assumes that you're using the old script tags.
 
 	Just include [`jqt.js`](https://raw.githubusercontent.com/srph/jqt/master/lib/jqt.js) after jQuery `>=3`.
+	
 	```html
 	<script src="/path/to/jquery.js"></script>
 	<script src="/path/to/jqt.js"></script>
