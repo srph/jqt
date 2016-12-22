@@ -10,7 +10,8 @@ env:
     - GIT_NAME: Travis CI
     - GIT_EMAIL: nobody@nobody.org
     - GITHUB_REPO: srph/jqt
-    - GIT_SOURCE: docs
+    # GitBook output
+    - GIT_SOURCE: _book
 
 script:
   - npm run docs:build
