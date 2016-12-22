@@ -6,9 +6,7 @@ Think of it as a low-level version of builtin jQuery animations such as [`$.fade
 Checkout the demo [examples](https://srph.github.io/jqt).
 
 ## Use case
-This library was **only** *dogfed* for tab transitions, menu animations, etc.
-
-I have no use case for list transitions yet. It would require elements to be removed and appended properly. If you'd like this to be implemented, please submit an issue or preferrably a PR! If you'd like some help, let me know. I have an idea on how to implement this, but don't have the time to do so.
+I've never found any similar libraries outside frameworks. This library was *dogfed* for projects I handle at works, usually for tab transitions, menu animations, etc.
 
 ## Installation
 Just include [`jqt.js`](https://raw.githubusercontent.com/srph/jqt/master/lib/jqt.js) after [jQuery](jquery) `>=3`.
