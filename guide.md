@@ -79,7 +79,9 @@ This part is the most interesting part. This is where you'll put the instruction
 
 <details>
 <summary>Setup the script</summary>
-We're finally in the last stage of this guide. I know it's been pretty long, but it's going to be all over shortly. Luckily, `jqt` lets us easily show or hide our element without much code.
+We're finally in the last stage of this guide. I know it's been pretty long, but it's going to be all over shortly.
+
+This used to be either hard or tedious but, luckily, `jqt` lets us easily show or hide our element without much code.
 
 ```js
 // The flag we'll rely to check
