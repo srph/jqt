@@ -18,3 +18,6 @@ All examples are also available via CodePen:
 - [Modal](http://codepen.io/srph/pen/bBmYjP)
 - [Tabs](http://codepen.io/srph/pen/ObBOrG)
 - [Sidebar](http://codepen.io/srph/pen/bBJoab)
+
+## Projects
+[jQuery Modal](https://github.com/srph/jquery-modal) is an example of a project that uses jqt.
